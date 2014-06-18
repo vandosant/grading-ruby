@@ -23,8 +23,6 @@ class Grading
   end
 
   def evaluate
-    result = ''
-
     pertinent_changes = @differences.select do |difference|
       difference == :down || difference == :up
     end
@@ -40,5 +38,3 @@ class Grading
     result
   end
 end
-
-Array
